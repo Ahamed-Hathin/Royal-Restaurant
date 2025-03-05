@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hotell</title>
+    <link rel="icon" type="image/png" href="D:\royal\images\logo.png">
+    <link rel="stylesheet" href="royal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <header class="sticky">
+        <a class="brand">Royal Arabian</a>
+
+
+        <nav class="nav-bar1">
+            <ul class="nav-bar">
+                <li class="nav"><a class="home">Home</a></li>
+                <li class="nav"><a class="about-us">About Us</a></li>
+                <li class="nav"><a class="offer-zone">Offer Zone</a></li>
+                <li class="nav"><a>Book a Table</a></li>
+                <li class="nav"><a class="Contact-us">Contact Us</a></li>
+            </ul>
+
+
+            <!---------MENU BAR!---------->
+
+            <div class="menu-bar" onclick="showNavbar()">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </nav>
+
+
+
+    </header>
+
+    <div class="side-navbar" onclick=" closeNavbar()">
+
+        <p class="side-nav"><a>Home</a></p>
+        <p class="side-nav"><a>About Us</a></p>
+        <p class="side-nav"><a href="royal offer.html" target="_blank">Offer Zone</a></p>
+        <p class="side-nav"><a>Book a table</a></p>
+        <p class="side-nav"><a>Contact Us</a></p>
+    </div>
+
+
+    <section class="slider"></section>
+
+    <section class="about">
+        <div class="abt-info">
+            <div class="abt-title">
+                <h4 data-aos="fade-up" data-aos-duration="800">Read Our story</h4>
+                <h2 data-aos="fade-up" data-aos-duration="800">We've been Making The <br> Delicious Food Since 2020</h2>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="800" class="abt-content">
+                <p>Fusce hendrerit malesuada lacinia. Donec semper semper sem vitae malesuada. Proin scelerisque risus
+                    et ipsum semper molestie sed in nisi. Ut rhoncus congue lectus, rhoncus venenatis leo malesuada id.
+                </p>
+                <p>Sed elementum vel felis sed scelerisque. In arcu diam, sollicitudin eu nibh ac, posuere tristique
+                    magna. You can use this template for your cafe or restaurant website. Please tell your friends about
+                    <a href="https://plus.google.com/+templatemo" target="_parent">templatemo</a>. Thank you.
+                </p>
+            </div>
+        </div>
+
+        <!--
+                    <div class="abt-img">
+                        <img src="images/about-image.jpg">
+                    </div>
+                   -->
+    </section>
+
+
+    <section class="fd-offer">
+        <div class="offer-title">
+            <h2 data-aos="fade-right" data-aos-duration="1000">Offers Zone</h2>
+            <h4 data-aos="fade-right" data-aos-duration="1000">Check Out Now</h4>
+        </div>
+
+        <div class="offer-img">
+            <img src="images/Chiken biriyani.jpg">
+            <img src="images/offer-bbq.jpg">
+            <img src="images/offer-grill.jpg">
+        </div>
+
+    </section>
+
+
+    <section class="fd-menu">
+        <div class="fd-menu-title">
+            <h2 data-aos="fade-up" data-aos-duration="800">Our Menu</h2>
+            <h4 data-aos="fade-up" data-aos-duration="800">Snacks Time & Dinnig</h4>
+        </div>
+
+        <div class="fd-menu-img">
+            <img src="images/Shawarma.jpg">
+            <div class="fd-menu-name">
+                <h4>Shawarma</h4>
+            </div>
+            <img src="images/Parota.jpg">
+            <div class="fd-menu-name">
+                <h4>Grill</h4>
+            </div>
+            <img src="images/Chicken biryani.jpg">
+            <div class="fd-menu-name">
+                <h4>Biriyani</h4>
+            </div>
+
+            <img src="images/fish finger.jpg">
+            <div class="fd-menu-name">
+                <h4>Fish Finger</h4>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+    <!-----------Footer!-------------->
+
+    <footer class="footer">
+        <div class="hotel-title">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Restaurants</h4>
+                    <ul>
+                        <li><a>Manapparai</a></li>
+                        <li><a>Viralimalai</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-col">
+                    <h4>Reach Us</h4>
+                    <ul>
+                        <li><a>arabianrestaurants@gmail.com</a></li>
+                        <li><a>9786555978</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="restaurants-demo.html">Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a href="offer zone.html">Offer Zone</a></li>
+                        <li><a>Book a Table</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+            <script type="text/javascript">
+                window.addEventListener("scroll", function () {
+                    var header = document.querySelector("header");
+                    header.classList.toggle("sticky", window.scrollY > 0);
+                })
+
+
+
+
+                var sidenavbar = document.querySelector(".side-navbar")
+
+                function showNavbar() {
+                    sidenavbar.style.display = "block"
+                }
+
+                function closeNavbar() {
+                    sidenavbar.style.display = "none"
+                }
+
+
+
+
+
+
+
+
+
+
+                document.querySelector('.home').addEventListener('click', function () {
+                    document.querySelector('.slider').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+
+                document.querySelector('.about-us').addEventListener('click', function () {
+                    document.querySelector('.about').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+
+                document.querySelector('.offer-zone').addEventListener('click', function () {
+                    document.querySelector('.fd-offer').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+
+
+                document.querySelector('.Contact-us').addEventListener('click', function () {
+                    document.querySelector('.footer').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+
+
+
+
+
+            </script>
+
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+                integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+            <script>
+                AOS.init();
+            </script>
+
+</body>
