@@ -105,7 +105,7 @@ a:after{
      }
 
      .menu-line{
-          background-color:black;
+          background-color:rgb(231, 207, 207);
           height:2px;
           width:20px;
           margin-bottom:3px;
@@ -115,7 +115,7 @@ a:after{
 
     header .menu-line{
         transition: 0.6s;
-        color: #ffffff;
+        color: #abbab6;
         margin-right: 10px;
      }
    
@@ -130,7 +130,7 @@ a:after{
     cursor: pointer;
     background-color: black;
     color: white;
-    width: 50%;
+    width: 52%;
     padding-top: 22%;
     padding-left: 13%;
     padding-bottom: 91%;
@@ -198,6 +198,7 @@ a:after{
 
 
 .abt-info{
+    flex-wrap: wrap;
    
 }
 .abt-title h4{
@@ -260,17 +261,27 @@ a:after{
 }
 
 .offer-img{
-    padding-bottom: 4em;
+    padding-bottom: 0;
 }
 
 
 .fd-menu{
       text-align: center;
-      padding-top:7em ;
-}  
+      padding-top:50px ;
+    }  
 
+    
+.menu-img-container{
+display: flex;
+justify-content: center;
+column-gap: 80px;
+flex-wrap: wrap;
+row-gap: 4.5em;
+}
 
-
+.fd-menu-title{
+    margin-bottom: 50px;
+}
 
 
 
@@ -287,19 +298,29 @@ a:after{
 
 
 .fd-menu-img{
-     display: flex;
+    
     justify-content: space-evenly;
-    padding-top: 70px;
+    padding-top: 55px;   
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    margin-top: 0;
+    padding: 10px 10px 11px 10px;
+    border-radius: 30px;
+      
 
 }
 
 
 .fd-menu-img img{
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
     
 }
 
+.fd-menu-img h4{
+    margin-top: 4px;
+    letter-spacing: 2px;
+}
 
 
 
@@ -331,6 +352,7 @@ a:after{
  .footer{
        padding:40px 30px;
        background-color:#24262b;
+       margin-top: 50px;
     
      }
  
@@ -434,42 +456,47 @@ a:after{
 
 
   .offer-img img{
-    background-size: cover;
+    background-size: cover; 
     width: 345px;
     height: 525px;
-    padding:20px 10px;
+    padding:20px 10px 0px 10px;
 }
 
+
+
+.menu-img-container{
+  flex-basis: 30%;
+  row-gap: 30px;
+  column-gap: 30px;
+    }
+    
 
   .fd-menu{
     text-align: center;
-    padding-top:7em ;
+    margin-top: 40px;
+    background-color: #e7e5e5;
+    padding-bottom: 50px;
+   
 }  
 
 
-  .fd-menu-img{
-    display: flex;
-    flex-direction: column;
-   justify-content: space-evenly;
-   padding-top: 70px;
-   align-items: center;
-
-}
+ 
 
 
 .fd-menu-img img{
-   width: 330px;
-   height: 355px;
-   border-radius: 48px;
+   width: 150px;
+   height: 150px;
+   border-radius: 15px;
    
    
 }
 
-.fd-menu-name{
 
-    margin-bottom: 50px;
-    padding-top: 1.5rem;
-    font-size: 25px;
+
+.fd-menu-title{
+
+padding-bottom: 35px;
+}
 }
 
 .footer{
