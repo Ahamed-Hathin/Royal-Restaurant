@@ -11,8 +11,7 @@ body{
 }
 
 
- header{
-               
+ header{   
                
                display:flex;              
                justify-content:space-between;
@@ -43,6 +42,9 @@ body{
         color: #ffffff;
         margin-left: 10px;
      }
+     
+
+     
      
 
 header.sticky ul li a{
@@ -104,20 +106,18 @@ a:after{
     
      }
 
-     .menu-line{
-          background-color:rgb(231, 207, 207);
-          height:2px;
-          width:20px;
-          margin-bottom:3px;
-    }
+    
    
-
-
-    header .menu-line{
+     .menu-bar i{ 
+        font-size: 1.3em;      
         transition: 0.6s;
         color: #abbab6;
-        margin-right: 10px;
+        margin-left: 10px;
+       
      }
+
+    
+     
    
    
 
@@ -126,20 +126,28 @@ a:after{
 
 
 .side-navbar{
-    position: absolute;
+    position: fixed;
     cursor: pointer;
-    background-color: black;
-    color: white;
-    width: 52%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0.1);
+    color: #000;
     padding-top: 22%;
-    padding-left: 13%;
-    padding-bottom: 91%;
-    display: none;
-    z-index:3;
+    padding-left: 7%;
+    padding-bottom: -13%;
+    z-index: 3;
     border-radius: 5px;
+    width: 250px;
+    height: 85vh;
+    display: none;
 }
 
-
+.side-navbar i{
+    margin-left: 24vh;
+    font-size: 1.8em;
+    font-weight: bold;
+   
+}
 
 
 
@@ -149,7 +157,8 @@ a:after{
 
 .side-navbar a{
     text-decoration:none;
-    color:white;         
+    color:#00f2ff;   
+    font-size: 18px;      
      }
 
 
@@ -268,6 +277,7 @@ a:after{
 .fd-menu{
       text-align: center;
       padding-top:50px ;
+      padding-bottom: 60px;
     }  
 
     
@@ -327,7 +337,6 @@ row-gap: 4.5em;
  /*-------Footer section------*/  
 
 
-
  ul{
     list-style:none;
     
@@ -352,7 +361,6 @@ row-gap: 4.5em;
  .footer{
        padding:40px 30px;
        background-color:#24262b;
-       margin-top: 50px;
     
      }
  
@@ -403,12 +411,22 @@ row-gap: 4.5em;
     padding-left:10px;
     cursor:pointer;
    }
-
+ 
+ 
 
 
 
 
 @media screen and (max-width:600px){
+
+
+
+  
+
+
+
+
+
 
    .menu-bar{
              display:block;
@@ -417,6 +435,9 @@ row-gap: 4.5em;
 .nav-bar{
          display:none;
      } 
+
+
+
 
     .about{ 
         padding:70px 0px;
@@ -497,7 +518,6 @@ row-gap: 4.5em;
 
 padding-bottom: 35px;
 }
-}
 
 .footer{
     padding:40px 30px;
@@ -516,22 +536,21 @@ padding-bottom: 35px;
 
 
 .row{
-
-row-gap: 20px;
-flex-direction:column;
-
-}
+     
+    row-gap: 20px;
+  flex-direction:column;
+ 
+   }
 
 
 
 .footer-col{
-width:35%;
+    width:35%;
+   
+  }
 
-}
 
-
-
-    }
+ }
 
 
  
