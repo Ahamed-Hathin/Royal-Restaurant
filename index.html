@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
         integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -17,10 +18,12 @@
 
     <header class="sticky">
         <a class="brand">Royal Arabian</a>
+        
 
 
         <nav class="nav-bar1">
             <ul class="nav-bar">
+
                 <li class="nav"><a class="home">Home</a></li>
                 <li class="nav"><a class="about-us">About Us</a></li>
                 <li class="nav"><a class="offer-zone">Offer Zone</a></li>
@@ -32,9 +35,7 @@
             <!---------MENU BAR!---------->
 
             <div class="menu-bar" onclick="showNavbar()">
-                <div class="menu-line"></div>
-                <div class="menu-line"></div>
-                <div class="menu-line"></div>
+                <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
 
@@ -43,7 +44,7 @@
     </header>
 
     <div class="side-navbar" onclick=" closeNavbar()">
-
+       <!-- <i class="fa-solid fa-xmark"></i> -->
         <p class="side-nav"><a>Home</a></p>
         <p class="side-nav"><a>About Us</a></p>
         <p class="side-nav"><a href="royal offer.html" target="_blank">Offer Zone</a></p>
@@ -103,50 +104,50 @@
 
         <div class="menu-img-container">
 
-            <div class="fd-menu-img">
+            <div  data-aos="zoom-in" data-aos-duration="800" class="fd-menu-img">
                 <img src="images/Shawarma.jpg">
                 <h4>Shawarma</h4>
             </div>
 
-            <div class="fd-menu-img">
-                <img src="images/parota2.jpg">
-                <h4>Parato</h4>
+            <div data-aos="zoom-in" data-aos-duration="800" class="fd-menu-img">
+                <img src="images/Parota1.jpg">
+                <h4>Grill</h4>
             </div>
 
-            <div class="fd-menu-img">
+            <div data-aos="zoom-in" data-aos-duration="800" class="fd-menu-img">
                 <img src="images/Chicken biryani.jpg">
                 <h4>Biriyani</h4>
             </div>
 
-            <div class="fd-menu-img">
+            <div data-aos="zoom-in" data-aos-duration="800" class="fd-menu-img">
                 <img src="images/fish finger.jpg">
                 <h4>Fish Finger</h4>
             </div>
         
 
-        <div class="fd-menu-img">
+        <div data-aos="zoom-in" data-aos-duration="800" class="fd-menu-img">
             <img src="images/grill.png">
             <h4>Grill</h4>
         </div>
       
 
-        <div class="fd-menu-img">
+        <div data-aos="zoom-in" data-aos-duration="800" class="fd-menu-img">
             <img src="images/french-fry1.jpg">
-            <h4>French Fries</h4>
+            <h4>French Fry</h4>
         </div>
         
 
-        <div class="fd-menu-img">
+        <div data-aos="zoom-in" data-aos-duration="800" class="fd-menu-img">
             <img src="images/burger2.jpg">
             <h4>Burger</h4>
         </div>
     
 
-        <div class="fd-menu-img">
-            <img src="images/nool-parota.jfif">
-            <h4>Nool Parato</h4>
+        <div data-aos="zoom-in" data-aos-duration="800" class="fd-menu-img">
+            <img src="images/Chilli parota.jpg">
+            <h4>Chilli Parota</h4>
         </div>
-    </div>
+    </div> 
 
     </section>
 
@@ -154,38 +155,40 @@
 
 
     <!-----------Footer!-------------->
+ 
 
     <footer class="footer">
         <div class="hotel-title">
             <div class="row">
                 <div class="footer-col">
                     <h4>Restaurants</h4>
-                    <ul>
-                        <li><a>Manapparai</a></li>
-                        <li><a>Viralimalai</a></li>
-                    </ul>
-                </div>
-
-
-                <div class="footer-col">
+                        <ul>
+                            <li><a>Manapparai</a></li>
+                            <li><a>Viralimalai</a></li>
+                        </ul>   
+                </div> 
+    
+    
+               <div class="footer-col">
                     <h4>Reach Us</h4>
-                    <ul>
-                        <li><a>arabianrestaurants@gmail.com</a></li>
-                        <li><a>9786555978</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
+                        <ul>
+                            <li><a>arabianrestaurants@gmail.com</a></li>
+                            <li><a>9786555978</a></li>
+                        </ul>   
+                </div>    
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
                     <ul>
                         <li><a href="restaurants-demo.html">Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a href="offer zone.html">Offer Zone</a></li>
                         <li><a>Book a Table</a></li>
                         <li><a>Contact Us</a></li>
-                    </ul>
-                </div>
+                    </ul>    
             </div>
+    </div>
+   
 
 
 
@@ -200,6 +203,11 @@
 
 
                 var sidenavbar = document.querySelector(".side-navbar")
+                var menubar=document.querySelector(".menu-bar")
+
+                function showNavbar() {
+                    menubar.style.display = "none"
+                }
 
                 function showNavbar() {
                     sidenavbar.style.display = "block"
